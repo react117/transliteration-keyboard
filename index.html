@@ -81,30 +81,8 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <script type="text/babel">
-    const Item = ({ entity: { name, char } }) => <div>{`${name}: ${char}`}</div>;
-    const rta = (
-      <div className="container">
-        <ReactTextareaAutocomplete
-          className="my-textarea"
-          onChange={e => console.log(e.target.value)}
-          loadingComponent={() => <span>Loading</span>}
-          trigger={{
-            ":": {
-              dataProvider: token => {
-                return [
-                  { name: "smile", char: "🙂" },
-                  { name: "heart", char: "❤️" }
-                ];
-              },
-              component: Item,
-              output: (item, trigger) => item.char
-            }
-          }}
-        />
-      </div>
-    );
-
-    ReactDOM.render(rta, document.getElementById("home"));
+    const element = <h1>Hello, world</h1>;
+    ReactDOM.render(element, document.getElementById('home'));
     </script>
 
   </body>
