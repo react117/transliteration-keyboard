@@ -66,12 +66,17 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <script type="text/babel">
+    function getTransliteration(e) {
+      e.preventDefault();
+      console.log('The link was clicked.');
+    }
+
     const element = (
       <div class="container">
         <div class="row">
           <div class="form-group">
             <label for="comment">Type anything:</label>
-            <textarea class="form-control" id="transKb" onkeyup={e => console.log(e.target.value)}></textarea>
+            <textarea class="form-control" id="transKb" onkeyup={getTransliteration}></textarea>
           </div>
         </div>
       </div>
