@@ -50,14 +50,6 @@
       
     </section>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -79,7 +71,7 @@
         <div class="row">
           <div class="form-group">
             <label for="comment">Type anything:</label>
-            <textarea class="form-control" id="transKb"></textarea>
+            <textarea class="form-control" id="transKb" onkeyup={e => console.log(e.target.value)}></textarea>
           </div>
         </div>
       </div>
@@ -88,6 +80,13 @@
     ReactDOM.render(element, document.getElementById('home'));
     </script>
 
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
   </body>
 
 </html>
