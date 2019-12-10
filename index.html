@@ -66,8 +66,7 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <script type="text/babel">
-    function getTransliteration(e) {
-      e.preventDefault();
+    const getTransliteration = (e)=> {
       var currText = e.target.value;
       console.log(currText);
 
